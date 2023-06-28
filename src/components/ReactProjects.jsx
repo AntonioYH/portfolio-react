@@ -17,11 +17,11 @@ const ReactProjects = () => {
       className="py-4"
     >
       <div className="pb-4 flex justify-center">
-        <h3 className="text-xl">
+        <h2 className="text-xl">
           {'<React'}
           <span className="text-[#e2286c]">/</span>
           {'>'}
-        </h3>
+        </h2>
       </div>
       <ProjectsCarousel>
         <motion.div className="item"></motion.div>
