@@ -84,7 +84,7 @@ h3 {
 }
 
 .slider_container {
-  box-shadow: inset 0px 5px 12px black;
+  box-shadow: inset 0px 5px 7px black;
 }
 
 @media screen and (max-width: 767px) {
