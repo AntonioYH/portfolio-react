@@ -1,15 +1,17 @@
-import ProyectsCarousel from './ProyectsCarousel';
+import ProjectsCarousel from './ProjectsCarousel';
 import { useRef } from 'react';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
+import ReactProjects from './ReactProjects';
+import NodeProjects from './NodeProjects';
 
-const Proyects = () => {
+const Projects = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
   return (
     <div
       ref={ref}
-      id="Proyects"
+      id="Projects"
       style={{
         transform: isInView ? 'none' : 'translateX(+200px)',
         opacity: isInView ? 1 : 0,
@@ -19,16 +21,15 @@ const Proyects = () => {
     >
       <section className="flex flex-col justify-center items-center">
         <h2>
-          {'<Proyects'}
+          {'<Projects'}
           <span className="text-[#e2286c]">/</span>
           {'>'}
         </h2>
       </section>
-      <div className="py-4">
-        <ProyectsCarousel />
-      </div>
+      <ReactProjects />
+      <NodeProjects />
     </div>
   );
 };
 
-export default Proyects;
+export default Projects;

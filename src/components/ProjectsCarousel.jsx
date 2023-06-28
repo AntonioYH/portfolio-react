@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState, useRef } from 'react';
 
-const ProyectsCarousel = () => {
+const ProjectsCarousel = ({ children }) => {
   const [width, setWidth] = useState(0);
   const slider_wrapper = useRef();
 
@@ -12,24 +12,19 @@ const ProyectsCarousel = () => {
   return (
     <motion.div
       ref={slider_wrapper}
-      className="overflow-hidden"
+      className="slider_container rounded py-4 overflow-hidden"
       whileTap={{ cursor: 'grabbing' }}
       whileHover={{ cursor: 'grab' }}
     >
       <motion.div
-        className="flex gap-7"
+        className="flex gap-5"
         drag="x"
         dragConstraints={{ right: 0, left: -width }}
       >
-        <motion.div className="item"></motion.div>
-        <motion.div className="item"></motion.div>
-        <motion.div className="item"></motion.div>
-        <motion.div className="item"></motion.div>
-        <motion.div className="item"></motion.div>
-        <motion.div className="item"></motion.div>
+        {children}
       </motion.div>
     </motion.div>
   );
 };
 
-export default ProyectsCarousel;
+export default ProjectsCarousel;

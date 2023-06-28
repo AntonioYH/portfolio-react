@@ -4,7 +4,7 @@ import Contacts from './components/Contacts';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './components/Home';
-import Proyects from './components/Proyects';
+import Projects from './components/Projects';
 import Skills from './components/Skills';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import setDefaultSystemTheme from './utils/setDefaultSystemTheme';
@@ -44,7 +44,7 @@ function App() {
           </div>
           <Skills />
           <div className="md:flex md:justify-center">
-            <Proyects />
+            <Projects />
           </div>
           <Contacts />
         </main>

@@ -19,7 +19,7 @@ const Navigation = () => {
           <a href="#Skills">Skills</a>
         </li>
         <li className="lg:hover:translate-y-[-2px] lg:transition lg:hover:text-[#e2286c]">
-          <a href="#Proyects">Proyects</a>
+          <a href="#Projects">Projects</a>
         </li>
         <li className="lg:hover:translate-y-[-2px] lg:transition lg:hover:text-[#e2286c]">
           <a href="#Contacts">Contacts</a>

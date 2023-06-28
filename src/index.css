@@ -64,11 +64,12 @@ p {
 
 h3 {
   font-family: 'Oleo Script', cursive;
+  text-shadow: 0.9px 0.9px 1px black;
 }
 
 .item {
-  height: 200px;
-  min-width: 200px;
+  height: 260px;
+  min-width: 260px;
   border-radius: 2rem;
   background-color: crimson;
 }
@@ -81,6 +82,10 @@ h3 {
   width: 95%;
   max-width: 425px;
   border: 0;
+}
+
+.slider_container {
+  box-shadow: inset 0px 5px 12px black;
 }
 
 @media screen and (max-width: 767px) {
