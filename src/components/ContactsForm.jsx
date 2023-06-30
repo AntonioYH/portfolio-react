@@ -18,7 +18,7 @@ const ContactsForm = () => {
       <div className="form__input flex flex-col ">
         {/* name */}
         <input
-          className="p-1 dark:text-white shadow-md shadow-black placeholder:text-center rounded dark:bg-[#181818] bg-[#f0f0f0] focus:outline-none"
+          className="p-1 dark:text-white placeholder:text-center rounded dark:bg-[#181818] bg-[#f0f0f0] focus:outline-none"
           type="text"
           name="user_name"
           placeholder="Name"
@@ -40,7 +40,7 @@ const ContactsForm = () => {
       <div className="form__input  flex flex-col">
         {/* email */}
         <input
-          className="p-1 dark:text-white shadow-md shadow-black placeholder:text-center rounded bg-[#f0f0f0] dark:bg-[#181818] focus:outline-none"
+          className="p-1 dark:text-white placeholder:text-center rounded bg-[#f0f0f0] dark:bg-[#181818] focus:outline-none"
           type="email"
           name="user_email"
           placeholder="Email Address"
@@ -62,7 +62,7 @@ const ContactsForm = () => {
       </div>
       <div className="form__input  flex flex-col">
         <textarea
-          className="p-1 dark:text-white min-h-[150px] shadow-md shadow-black max-h-[400px] dark:bg-[#181818] focus:outline-none placeholder:text-center rounded resize-y bg-[#f0f0f0]"
+          className="p-1 dark:text-white min-h-[150px] max-h-[400px] dark:bg-[#181818] focus:outline-none placeholder:text-center rounded resize-y bg-[#f0f0f0]"
           name="message"
           autoComplete="on"
           placeholder="Send me a message"

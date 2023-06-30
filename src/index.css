@@ -70,7 +70,6 @@ h3 {
   height: 260px;
   min-width: 260px;
   border-radius: 2rem;
-  background-color: crimson;
 }
 
 .footer__p {
@@ -83,7 +82,9 @@ h3 {
   border: 0;
 }
 
-.slider_container {
+.slider_container,
+input,
+textarea {
   box-shadow: inset 0px 1px 6px black;
 }
 

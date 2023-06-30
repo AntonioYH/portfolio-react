@@ -1,10 +1,14 @@
-import { motion, useInView } from 'framer-motion';
+import { useInView } from 'framer-motion';
 import ProjectsCarousel from './ProjectsCarousel';
 import { useRef } from 'react';
+import { reactProjects } from '../utils/reactProjects';
+import ProjectCard from './ProjectCard';
 
 const ReactProjects = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+
+  console.log(reactProjects);
 
   return (
     <div
@@ -24,12 +28,9 @@ const ReactProjects = () => {
         </h2>
       </div>
       <ProjectsCarousel>
-        <motion.div className="item"></motion.div>
-        <motion.div className="item"></motion.div>
-        <motion.div className="item"></motion.div>
-        <motion.div className="item"></motion.div>
-        <motion.div className="item"></motion.div>
-        <motion.div className="item"></motion.div>
+        {reactProjects.map((project) => (
+          <ProjectCard key={project.name} project={project} />
+        ))}
       </ProjectsCarousel>
     </div>
   );

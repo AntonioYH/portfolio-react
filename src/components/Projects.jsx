@@ -1,4 +1,3 @@
-import ProjectsCarousel from './ProjectsCarousel';
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import ReactProjects from './ReactProjects';
