@@ -20,7 +20,12 @@ const Footer = () => {
           </a>
         </div>
         <div>
-          <i className="fa-solid fa-file"></i>
+          <a
+            href="https://docs.google.com/document/d/1Cow36MbAhAEzbMu96traw5cCURFFj0uB/edit"
+            target="_blank"
+          >
+            <i className="fa-solid fa-file"></i>
+          </a>
         </div>
       </section>
     </footer>

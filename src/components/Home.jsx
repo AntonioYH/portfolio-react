@@ -40,7 +40,12 @@ const Home = () => {
             </a>
           </div>
           <div>
-            <i className="lg:hover:text-[#e2286c] lg:transition fa-solid fa-file"></i>
+            <a
+              href="https://docs.google.com/document/d/1Cow36MbAhAEzbMu96traw5cCURFFj0uB/edit"
+              target="_blank"
+            >
+              <i className="lg:hover:text-[#e2286c] lg:transition hover:cursor-pointer fa-solid fa-file"></i>
+            </a>
           </div>
         </section>
       </div>
