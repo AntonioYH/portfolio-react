@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="min-h-screen relative overflow-x-hidden flex flex-col gap-4">
-      <motion.div className="h-[63px] shadow-sm shadow-black lg:h-[68px] bg-[#FFFFFF] dark:bg-[#020001] flex flex-col items-center justify-center z-10 w-full fixed top-0">
+      <motion.div className="header-container h-[63px] shadow-sm shadow-black lg:h-[68px] bg-transparent dark:bg-[#020001] flex flex-col items-center justify-center z-10 w-full fixed top-0">
         <Header />
         <motion.div
           className="w-full absolute bottom-0 h-[3px] bg-gray-950 origin-[0%] dark:bg-white"

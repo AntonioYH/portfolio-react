@@ -35,6 +35,10 @@ font-family: 'Rubik', sans-serif;
   scroll-behavior: smooth;
 }
 
+.header-container {
+  backdrop-filter: blur(10px);
+}
+
 .header__h1 {
   text-shadow: 0.9px 0.9px 1px black;
   font-family: 'Oleo Script', cursive;
