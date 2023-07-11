@@ -8,8 +8,6 @@ const ReactProjects = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  console.log(reactProjects);
-
   return (
     <div
       style={{

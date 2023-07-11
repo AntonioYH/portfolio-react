@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
         <div>
           <a
-            href="https://docs.google.com/document/d/1Cow36MbAhAEzbMu96traw5cCURFFj0uB/edit"
+            href="https://drive.google.com/file/d/1bUiEbQ0R4vDtMui42pz8ufNZL22I8fCs/view?usp=drive_link"
             target="_blank"
           >
             <i className="fa-solid fa-file"></i>
