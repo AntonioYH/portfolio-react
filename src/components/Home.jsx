@@ -41,7 +41,7 @@ const Home = () => {
           </div>
           <div>
             <a
-              href="https://drive.google.com/file/d/1bUiEbQ0R4vDtMui42pz8ufNZL22I8fCs/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1hDQoUuM8GlddCUlI179D2TNLJucctre1"
               target="_blank"
             >
               <i className="lg:hover:text-[#e2286c] lg:transition hover:cursor-pointer fa-solid fa-file"></i>
