@@ -1,7 +1,7 @@
 import { useGlobalStatesContext } from '../hooks/useGlobalStatesContext';
-import Tecnologies from './Tecnologies';
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
+import Tecnologies from './Tecnologies';
 
 const Skills = () => {
   const ref = useRef(null);
@@ -36,7 +36,7 @@ const Skills = () => {
       <h3 className="md:text-[17px] lg:text-lg font-bold underline">
         Web Development Full Stack
       </h3>
-      <article className="md:mt-4 grid grid-cols-2 md:grid-cols-4 grid-rows-4 md:grid-rows-2 gap-4 md:gap-6 lg:gap-8">
+      <article className="md:mt-4 grid grid-cols-2 md:grid-cols-4 grid-rows-6 md:grid-rows-3 gap-4 md:gap-6 lg:gap-8">
         <Tecnologies text={'HTML5'} key={'HTML'}>
           <i className="fa-brands fa-html5"></i>
         </Tecnologies>
@@ -45,6 +45,14 @@ const Skills = () => {
         </Tecnologies>
         <Tecnologies text={'JavaScript'} key={'JavaScript'}>
           <i className="fa-brands fa-js"></i>
+        </Tecnologies>
+        <Tecnologies text={'TypeScript'} key={'TypeScript'}>
+          {darkMode === 'light' && (
+            <box-icon type="logo" size="md" name="typescript"></box-icon>
+          )}
+          {darkMode === 'dark' && (
+            <box-icon type="logo" size="md" color="white" name="typescript"></box-icon>
+          )}
         </Tecnologies>
         <Tecnologies text={'ReactJS'} key={'ReactJS'}>
           <i className="fa-brands fa-react"></i>
@@ -81,6 +89,9 @@ const Skills = () => {
             />
           )}
         </Tecnologies>
+        <Tecnologies text={'SASS'} key={'SASS'}>
+          <i className="fa-brands fa-sass"></i>
+        </Tecnologies>
         <Tecnologies text={'NodeJS'} key={'NodeJS'}>
           <i className="fa-brands fa-node"></i>
         </Tecnologies>
@@ -99,6 +110,9 @@ const Skills = () => {
               src="https://res.cloudinary.com/du7xis1ny/image/upload/f_auto,q_auto/v1/ligth_portfolio_images/sepipoakpm909hkgx0ul"
             />
           )}
+        </Tecnologies>
+        <Tecnologies text={'Git'} key={'Git'}>
+          <i className="fa-brands fa-github"></i>
         </Tecnologies>
       </article>
     </article>
